@@ -470,6 +470,9 @@
     .filter-item{
         width: calc(50% - 30px);
     }
+    .new-arrive{
+        margin-top: 20vh;
+    }
 }
 
 @media screen and (min-width: 992px){
