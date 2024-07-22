@@ -70,8 +70,15 @@
                     <button type="button" class="subfilter-btn" id="brand9">Carolina Herrera</button>
                 </div>
 
+                <div class="subfilter-btns" id="arabes-subfilters" style="display: none;">
+                    <button type="button" class="subfilter-btn" id="arabes-brand1">Lataffa</button>
+                    <button type="button" class="subfilter-btn" id="arabes-brand2">Maison Alhambra</button>
+                    <button type="button" class="subfilter-btn" id="arabes-brand3">Afnan</button>
+                    <button type="button" class="subfilter-btn" id="arabes-brand4">Al Haramain</button>
+                </div>
+
                 <div class = "filter-items">
-                    <div class = "filter-item all arabes">
+                    <div class = "filter-item all arabes arabes-brand1">
                         <div class = "item-img">
                             <img src = "../assets/img/lataffa khamrah.jpeg" alt = "Lattafa Khamrah image">
                             <!-- <span class = "discount">20%</span> -->
@@ -86,7 +93,7 @@
                         </div>
                     </div>
 
-                    <div class = "filter-item all arabes">
+                    <div class = "filter-item all arabes arabes-brand3">
                         <div class = "item-img">
                             <img src = "../assets/img/afnan 9pm.jpeg" alt = "Afnan 9pm image">
                             <!-- <span class = "discount">20%</span> -->
@@ -114,7 +121,7 @@
                             <a href = "https://wa.link/yv4edk" class ="add-btn">Comprar</a>
                         </div>
                     </div>
-                    <div class = "filter-item all arabes">
+                    <div class = "filter-item all arabes arabes-brand4">
                         <div class = "item-img">
                             <img src = "../assets/img/amber oud.jpeg" alt = "Al Haramain Amber Oud image">
                             <!-- <span class = "discount">20%</span> -->
@@ -142,13 +149,55 @@
                             <a href = "https://wa.link/rtx9lm" class ="add-btn">Comprar</a>
                         </div>
                     </div>
-                    <div class = "filter-item all arabes">
+                    <div class = "filter-item all arabes arabes-brand2">
                         <div class = "item-img">
                             <img src = "../assets/img/woody oud.jpeg" alt = "Maison Alhambra Woody Oud image">
                             <!-- <span class = "discount">20%</span> -->
                         </div>
                         <div class = "item-info">
                             <p>Maison Alhambra Woody Oud</p>
+                            <div>
+                                <!-- <span class = "old-price">$20.50</span>
+                                <span class = "new-price">$16.70</span> -->
+                            </div>
+                            <a href = "https://wa.link/z7awhf" class ="add-btn">Comprar</a>
+                        </div>
+                    </div>
+                    <div class = "filter-item all arabes arabes-brand1">
+                        <div class = "item-img">
+                            <img src = "../assets/img/Lattafa Bade'e Al Oud Honor & Glory.jpeg" alt = "Lattafa Bade'e Al Oud Honor & Glory image">
+                            <!-- <span class = "discount">20%</span> -->
+                        </div>
+                        <div class = "item-info">
+                            <p>Lattafa Bade'e Al Oud Honor & Glory</p>
+                            <div>
+                                <!-- <span class = "old-price">$20.50</span>
+                                <span class = "new-price">$16.70</span> -->
+                            </div>
+                            <a href = "https://wa.link/z7awhf" class ="add-btn">Comprar</a>
+                        </div>
+                    </div>
+                    <div class = "filter-item all arabes arabes-brand2">
+                        <div class = "item-img">
+                            <img src = "../assets/img/Maison Alhambra Tobacco Touch.jpeg" alt = "Maison Alhambra Tobacco Touch image">
+                            <!-- <span class = "discount">20%</span> -->
+                        </div>
+                        <div class = "item-info">
+                            <p>Maison Alhambra Tobacco Touch</p>
+                            <div>
+                                <!-- <span class = "old-price">$20.50</span>
+                                <span class = "new-price">$16.70</span> -->
+                            </div>
+                            <a href = "https://wa.link/z7awhf" class ="add-btn">Comprar</a>
+                        </div>
+                    </div>
+                    <div class = "filter-item all arabes arabes-brand2">
+                        <div class = "item-img">
+                            <img src = "../assets/img/Maison Alhambra Amber & Leather.jpeg" alt = "Maison Alhambra Amber & Leather image">
+                            <!-- <span class = "discount">20%</span> -->
+                        </div>
+                        <div class = "item-info">
+                            <p>Maison Alhambra Amber & Leather</p>
                             <div>
                                 <!-- <span class = "old-price">$20.50</span>
                                 <span class = "new-price">$16.70</span> -->
@@ -384,6 +433,7 @@
     // Mostrar y ocultar subfiltros
     document.getElementById('new').addEventListener('click', function() {
         document.getElementById('designer-subfilters').style.display = 'block';
+        document.getElementById('arabes-subfilters').style.display = 'none';
         document.getElementById('all').classList.remove('active-btn');
         document.getElementById('arabes').classList.remove('active-btn');
         this.classList.add('active-btn');
@@ -392,6 +442,7 @@
 
     document.getElementById('all').addEventListener('click', function() {
         document.getElementById('designer-subfilters').style.display = 'none';
+        document.getElementById('arabes-subfilters').style.display = 'none';
         document.getElementById('new').classList.remove('active-btn');
         document.getElementById('arabes').classList.remove('active-btn');
         this.classList.add('active-btn');
@@ -400,13 +451,14 @@
 
     document.getElementById('arabes').addEventListener('click', function() {
         document.getElementById('designer-subfilters').style.display = 'none';
+        document.getElementById('arabes-subfilters').style.display = 'block';
         document.getElementById('new').classList.remove('active-btn');
         document.getElementById('all').classList.remove('active-btn');
         this.classList.add('active-btn');
         filterItems('arabes');
     });
 
-    // Filtrar por subfiltros
+    // Filtrar por subfiltros de Diseñador
     document.getElementById('brand1').addEventListener('click', function() {
         filterItems('brand1');
         activateSubfilterButton(this);
@@ -443,6 +495,26 @@
     });
     document.getElementById('brand9').addEventListener('click', function() {
         filterItems('brand9');
+        activateSubfilterButton(this);
+    });
+
+    // Filtrar por subfiltros de Arabes
+    document.getElementById('arabes-brand1').addEventListener('click', function() {
+        filterItems('arabes-brand1');
+        activateSubfilterButton(this);
+    });
+
+    document.getElementById('arabes-brand2').addEventListener('click', function() {
+        filterItems('arabes-brand2');
+        activateSubfilterButton(this);
+    });
+
+    document.getElementById('arabes-brand3').addEventListener('click', function() {
+        filterItems('arabes-brand3');
+        activateSubfilterButton(this);
+    });
+    document.getElementById('arabes-brand4').addEventListener('click', function() {
+        filterItems('arabes-brand4');
         activateSubfilterButton(this);
     });
 
