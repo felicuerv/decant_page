@@ -435,6 +435,50 @@
     color: #FFFF;
 }
 
+
+/* Estilos para el cartel de "SIN STOCK" adaptado */
+.stock-label {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(211, 211, 211, 0.8); /* Fondo gris claro y semitransparente */
+    color: #333; /* Texto oscuro, pero no completamente negro */
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    font-family: inherit; /* Mantiene la fuente existente */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    border: 1px solid #e4b700; /* Borde sutil con color dorado */
+}
+
+/* Estilos para el botón deshabilitado */
+.disabled-btn {
+    background-color: #d3d3d3;
+    pointer-events: none;
+    color: #a0a0a0;
+    cursor: not-allowed;
+    border: 1px solid #d3d3d3;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: inherit;
+    font-weight: 600;
+    opacity: 0.6;
+}
+
+/* Ajustes generales en la estética del botón */
+.filter-item.out-of-stock .add-btn {
+    background-color: #d3d3d3;
+    pointer-events: none;
+    color: #a0a0a0;
+    cursor: not-allowed;
+    border: 1px solid #d3d3d3;
+    opacity: 0.6;
+}
+
   #scrollToTopBtn:hover {
     background-color: #ff729fa7;
   }
