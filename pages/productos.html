@@ -81,6 +81,7 @@
                     <button type="button" class="subfilter-btn" id="arabes-brand2">Maison Alhambra</button>
                     <button type="button" class="subfilter-btn" id="arabes-brand3">Afnan</button>
                     <button type="button" class="subfilter-btn" id="arabes-brand4">Al Haramain</button>
+                    <button type="button" class="subfilter-btn" id="arabes-brand5">Armaf</button>
                 </div>
 
                 <div class="subfilter-btns" id="lowcost-subfilters" style="display: none;">
@@ -137,11 +138,67 @@
                     </div>
                     <div class = "filter-item all arabes arabes-brand4 all-unisex">
                         <div class = "item-img">
-                            <img src = "../assets/img/amber oud.jpeg" alt = "Al Haramain Amber Oud image">
+                            <img src = "../assets/img/41.png" alt = "Al Haramain Amber Oud Gold Edition image">
                             <!-- <span class = "discount">20%</span> -->
                         </div>
                         <div class = "item-info">
-                            <p>Al Haramain Amber Oud</p>
+                            <p>Al Haramain Amber Oud Gold Edition</p>
+                            <div>
+                                <!-- <span class = "old-price">$20.50</span>
+                                <span class = "new-price">$16.70</span> -->
+                            </div>
+                            <a href = "https://wa.link/932s5s" class ="add-btn">Comprar</a>
+                        </div>
+                    </div>
+                    <div class = "filter-item all arabes arabes-brand5 all-unisex">
+                        <div class = "item-img">
+                            <img src = "../assets/img/37.png" alt = "Armaf Club de Nuit Intense Man image">
+                            <!-- <span class = "discount">20%</span> -->
+                        </div>
+                        <div class = "item-info">
+                            <p>Armaf Club de Nuit Intense Man</p>
+                            <div>
+                                <!-- <span class = "old-price">$20.50</span>
+                                <span class = "new-price">$16.70</span> -->
+                            </div>
+                            <a href = "https://wa.link/932s5s" class ="add-btn">Comprar</a>
+                        </div>
+                    </div>
+                    <div class = "filter-item all arabes arabes-brand1 all-unisex">
+                        <div class = "item-img">
+                            <img src = "../assets/img/38.png" alt = "Lattafa Yara Moi image">
+                            <!-- <span class = "discount">20%</span> -->
+                        </div>
+                        <div class = "item-info">
+                            <p>Lattafa Yara Moi</p>
+                            <div>
+                                <!-- <span class = "old-price">$20.50</span>
+                                <span class = "new-price">$16.70</span> -->
+                            </div>
+                            <a href = "https://wa.link/932s5s" class ="add-btn">Comprar</a>
+                        </div>
+                    </div>
+                    <div class = "filter-item all new brand9 all-unisex">
+                        <div class = "item-img">
+                            <img src = "../assets/img/39.png" alt = "Carolina Herrera 212 Vip Rose image">
+                            <!-- <span class = "discount">20%</span> -->
+                        </div>
+                        <div class = "item-info">
+                            <p>Carolina Herrera 212 Vip Rose</p>
+                            <div>
+                                <!-- <span class = "old-price">$20.50</span>
+                                <span class = "new-price">$16.70</span> -->
+                            </div>
+                            <a href = "https://wa.link/932s5s" class ="add-btn">Comprar</a>
+                        </div>
+                    </div>
+                    <div class = "filter-item all arabes arabes-brand1 all-unisex">
+                        <div class = "item-img">
+                            <img src = "../assets/img/40.png" alt = "Lataffa Bade'e Al Oud Amethyst image">
+                            <!-- <span class = "discount">20%</span> -->
+                        </div>
+                        <div class = "item-info">
+                            <p>Lataffa Bade'e Al Oud Amethyst</p>
                             <div>
                                 <!-- <span class = "old-price">$20.50</span>
                                 <span class = "new-price">$16.70</span> -->
@@ -788,6 +845,11 @@
 
         document.getElementById('arabes-brand4').addEventListener('click', function() {
             filterItems('arabes-brand4');
+            activateSubfilterButton(this);
+        });
+
+        document.getElementById('arabes-brand5').addEventListener('click', function() {
+            filterItems('arabes-brand5');
             activateSubfilterButton(this);
         });
     
