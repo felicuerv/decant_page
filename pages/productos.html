@@ -82,6 +82,7 @@
                     <button type="button" class="subfilter-btn" id="arabes-brand3">Afnan</button>
                     <button type="button" class="subfilter-btn" id="arabes-brand4">Al Haramain</button>
                     <button type="button" class="subfilter-btn" id="arabes-brand5">Armaf</button>
+                    <button type="button" class="subfilter-btn" id="arabes-brand6">Zimaya</button>
                 </div>
 
                 <div class="subfilter-btns" id="lowcost-subfilters" style="display: none;">
@@ -92,7 +93,7 @@
                     <button type="button" class="subfilter-btn" id="lowcost-brand4">Benetton</button>
                 </div>
                 <div class = "filter-items">
-                    <div class = "filter-item all arabes arabes-brand1 all-unisex">
+                    <div class = "filter-item all arabes arabes-brand1 all-unisex out-of-stock">
                         <div class = "item-img">
                             <img src = "../assets/img/lataffa khamrah.jpeg" alt = "Lattafa Khamrah image">
                             <!-- <span class = "discount">20%</span> -->
@@ -120,6 +121,20 @@
                                 <span class = "new-price">$16.70</span> -->
                             </div>
                             <a href = "https://wa.link/qgt5yd" class ="add-btn">Comprar</a>
+                        </div>
+                    </div>
+                    <div class = "filter-item all arabes arabes-brand6 all-unisex">
+                        <div class = "item-img">
+                            <img src = "../assets/img/42.png" alt = "Zimaya Amber Is Great">
+                            <!-- <span class = "discount">20%</span> -->
+                        </div>
+                        <div class = "item-info">
+                            <p>Zimaya Amber Is Great</p>
+                            <div>
+                                <!-- <span class = "old-price">$20.50</span>
+                                <span class = "new-price">$16.70</span> -->
+                            </div>
+                            <a href = "https://wa.link/932s5s" class ="add-btn">Comprar</a>
                         </div>
                     </div>
                     <div class = "filter-item all new brand5 all-masculino">
@@ -248,7 +263,7 @@
                             <a href = "https://wa.link/3kwe1z" class ="add-btn">Comprar</a>
                         </div>
                     </div>
-                    <div class = "filter-item all arabes arabes-brand2 all-masculino">
+                    <div class = "filter-item all arabes arabes-brand2 all-masculino out-of-stock">
                         <div class = "item-img">
                             <img src = "../assets/img/Maison Alhambra Tobacco Touch.jpeg" alt = "Maison Alhambra Tobacco Touch image">
                             <!-- <span class = "discount">20%</span> -->
@@ -770,7 +785,6 @@
             filterItems('lowcost-brand5');
             activateSubfilterButton(this);
         });
-    
         // Filtrar por subfiltros de Masculino y Unisex
         document.getElementById('all-masculino').addEventListener('click', function() {
             filterItems('all-masculino');
@@ -850,6 +864,11 @@
 
         document.getElementById('arabes-brand5').addEventListener('click', function() {
             filterItems('arabes-brand5');
+            activateSubfilterButton(this);
+        });
+
+        document.getElementById('arabes-brand6').addEventListener('click', function() {
+            filterItems('arabes-brand6');
             activateSubfilterButton(this);
         });
     
